@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màn hình chi tiết</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+        }
+        .nav-box, .footer-box {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .nav-box a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 5px;
+        }
+        .main-box {
+            border: 1px solid #000;
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            margin: 40px auto;
+            box-sizing: border-box;
+        }
+        .main-box h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        .form-row {
+            display: flex;
+            margin-bottom: 25px;
+            align-items: center;
+        }
+        .form-row .label {
+            width: 100px;
+            text-align: left;
+            padding-right: 15px;
+            font-size: 14px;
+        }
+        .form-row .field {
+            flex: 1;
+            font-size: 14px;
+            font-weight: bold; /* Để giống trong mockup phần hiển thị info */
+        }
+        .form-row .field.actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        .btn {
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #0b5ed7;
+        }
+        .footer-box {
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Navigation -->
+        <div class="nav-box">
+            <a href="#">Home</a> | <a href="login.html">Đăng xuất</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-box">
+            <h2>Màn hình chi tiết</h2>
+            <div class="form-row">
+                <div class="label">Username</div>
+                <div class="field">test1</div>
+            </div>
+            <div class="form-row">
+                <div class="label">Email</div>
+                <div class="field">test1@gmail.com</div>
+            </div>
+            <div class="form-row">
+                <div class="label"></div>
+                <div class="field actions">
+                    <a href="update.html" class="btn">Chỉnh sửa</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-box">
+            Lập trình web @01/2024
+        </div>
+    </div>
+</body>
+</html>
